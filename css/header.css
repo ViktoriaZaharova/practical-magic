@@ -1,0 +1,37 @@
+header {
+  padding: 40px 0;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header .container {
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 403px;
+  width: 100%;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #F7F7F7;
+  background: #121715;
+  border-radius: 50%;
+  width: 82px;
+  height: 82px;
+  min-width: 82px;
+  padding: 26px;
+}
+.header-link:hover {
+  background: #855C29;
+  fill: #fff;
+}

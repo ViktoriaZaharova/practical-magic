@@ -1,0 +1,79 @@
+.home {
+  background: url("../img/home-bg.jpg") no-repeat center bottom;
+  background-size: cover;
+  color: #F7F7F7;
+  padding: 273px 0 6px;
+  margin: 0 0 -60px;
+}
+
+.home-content {
+  width: 100%;
+  text-align: center;
+}
+
+.slogan {
+  margin: 30px auto 40px;
+  font-style: 300px;
+}
+
+.btn-mouse {
+  margin: 44px auto 0;
+}
+
+.name-course {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.name-course img {
+  margin: 0 15px 0 0;
+}
+.name-course p {
+  opacity: 0.5;
+}
+
+.date-course {
+  display: flex;
+  align-items: center;
+  max-width: 410px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 30px;
+  margin: 0 auto;
+  filter: drop-shadow(10px 0 70px rgba(5, 23, 18, 0.5));
+  border: 2px solid transparent;
+  background: linear-gradient(#133029, #133029) padding-box, linear-gradient(to bottom, rgba(247, 247, 247, 0.8), rgba(247, 247, 247, 0.2)) border-box;
+}
+.date-course__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 82px;
+  min-width: 82px;
+  height: 82px;
+  margin: 0 20px 0 0;
+  background: radial-gradient(ellipse at center, rgb(247, 247, 247) 0%, rgb(255, 221, 181) 50%);
+  fill: #855C29;
+  padding: 28px;
+}
+.date-course__text p {
+  text-transform: uppercase;
+  font-family: "Forum", sans-serif;
+  font-size: 40px;
+}
+.date-course__text span {
+  font-weight: 300;
+  display: block;
+  margin: 6px 0 0;
+}
+
+.btn-sign {
+  max-width: 900px;
+  width: 100%;
+}
