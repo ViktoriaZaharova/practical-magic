@@ -44,8 +44,8 @@ body {
   line-height: normal;
   font-family: "Onest", sans-serif;
   font-weight: normal;
-  background: #F7F7F7;
-  color: #121715;
+  background: #09261F;
+  color: #F7F7F7;
 }
 
 img {
@@ -167,10 +167,12 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 .btn-gradien-accent {
   color: #855C29;
   filter: drop-shadow(30px 0 85px -55px rgba(255, 233, 200, 0.6));
-  background: radial-gradient(ellipse at center, rgb(247, 247, 247) 20%, rgb(255, 221, 181) 80%);
+  background: url("../img/btn-default.svg") no-repeat center;
+  background-size: cover;
 }
 .btn-gradien-accent:hover, .btn-gradien-accent:focus {
-  background: radial-gradient(ellipse at center, rgb(247, 247, 247) 0%, rgb(255, 221, 181) 100%);
+  background: url("../img/btn-default-hover.svg") no-repeat center;
+  background-size: cover;
 }
 
 .svg-icon {
@@ -181,7 +183,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 
 strong, b {
   font-weight: bold;
-  display: inline-block;
+  display: inline;
 }
 
 ul, ol {
@@ -197,6 +199,57 @@ ul, ol {
   list-style-type: disc;
 }
 
+.list-decor li {
+  margin: 0 0 20px;
+  display: flex;
+  align-items: flex-start;
+}
+.list-decor li::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  margin: 0 20px 0 0;
+  background: url("../img/icon-decor1.svg") no-repeat center;
+  background-size: 100%;
+}
+.list-decor li:last-child {
+  margin: 0;
+}
+
+.list-check li {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 15px;
+}
+.list-check li:last-child {
+  margin: 0;
+}
+.list-check li::before {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 25px 0 0;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  background: url("../img/check-icon3.svg") no-repeat center;
+  background-size: 100%;
+}
+
+.list-check-v2 li {
+  align-items: center;
+}
+.list-check-v2 li::before {
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+  margin: 0 15px 0 0;
+  background: url("../img/check-icon4.svg") no-repeat center;
+  background-size: 100%;
+}
+
 h1 {
   font-family: "Forum", sans-serif;
   width: 100%;
@@ -208,13 +261,34 @@ h1 {
   max-width: 1230px;
 }
 
-h2 {
+.h1 {
+  width: 100%;
+  text-align: center;
+  margin: 45px auto;
+  text-transform: uppercase;
+  font-size: 195px;
+  font-family: "Forum", sans-serif;
+  color: #09261F;
+}
+
+h2, .h2 {
   width: 100%;
   font-family: "Forum", sans-serif;
   text-align: center;
   font-size: 90px;
   line-height: 115%;
-  margin: 0 auto;
+  margin: 0 auto 50px;
+  text-transform: uppercase;
+}
+
+h3, .h3 {
+  font-weight: bold;
+  font-size: 34px;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .container {
@@ -227,6 +301,54 @@ h2 {
   margin: 0 auto;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0 -10px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.col-25 {
+  width: 25%;
+  padding: 0 10px;
+}
+
+.col-50 {
+  width: 50%;
+  padding: 0 10px;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .m-auto {
   margin: 0 auto;
+}
+
+.m-100 {
+  margin: 100px 0;
+}
+
+.bg-black {
+  background: #121715;
+}
+
+.bg-green {
+  background: #133029;
+}
+
+.box-text p, .box-text ul {
+  margin: 0 0 20px;
+}
+.box-text p:last-child, .box-text ul:last-child {
+  margin: 0;
 }

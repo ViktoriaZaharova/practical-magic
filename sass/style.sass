@@ -43,8 +43,8 @@ body
   line-height: normal
   font-family: $default-font
   font-weight: normal
-  background: $white
-  color: $black
+  background: $green
+  color: $white
 
 img
   display: block
@@ -126,7 +126,7 @@ button, .btn
   align-items: center
   justify-content: center
   text-align: center
-  padding: 43px 
+  padding: 43px
   font-size: 34px
   font-weight: bold
   text-transform: uppercase
@@ -144,10 +144,11 @@ button, .btn
 .btn-gradien-accent
   color: $brown
   filter: drop-shadow(30px 0 85px -55px rgba(#FFE9C8, .6))
-  background: radial-gradient(ellipse at center, rgba(247,247,247,1) 20%,rgba(255,221,181,1) 80%)
+  background: url('../img/btn-default.svg') no-repeat center
+  background-size: cover
   &:hover, &:focus
-    background: radial-gradient(ellipse at center, rgba(247,247,247,1) 0%,rgba(255,221,181,1) 100%)
-
+    background: url('../img/btn-default-hover.svg') no-repeat center
+    background-size: cover
 
 .svg-icon
   display: inline-block
@@ -156,7 +157,7 @@ button, .btn
 
 strong, b
   font-weight: bold
-  display: inline-block
+  display: inline
 
 ul, ol
   padding: 0 0 0 20px
@@ -168,6 +169,50 @@ ul, ol
 .list-dots
   list-style-type: disc
 
+.list-decor
+  li
+    margin: 0 0 20px
+    display: flex
+    align-items: flex-start
+    &::before
+      content: ''
+      width: 40px
+      height: 40px
+      min-width: 40px
+      margin: 0 20px 0 0
+      background: url('../img/icon-decor1.svg') no-repeat center
+      background-size: 100%
+    &:last-child
+      margin: 0  
+
+.list-check
+  li
+    display: flex
+    align-items: flex-start
+    margin: 0 0 15px
+    &:last-child
+      margin: 0
+    &::before
+      content: ''
+      @include d-flex
+      margin: 0 25px 0 0
+      width: 50px
+      height: 50px
+      min-width: 50px
+      background: url('../img/check-icon3.svg') no-repeat center
+      background-size: 100%     
+  
+.list-check-v2
+  li
+    align-items: center
+    &::before
+      width: 35px
+      height: 35px
+      min-width: 35px
+      margin: 0 15px 0 0
+      background: url('../img/check-icon4.svg') no-repeat center
+      background-size: 100%
+
 h1
   font-family: $title-font
   width: 100%
@@ -178,13 +223,32 @@ h1
   margin: 0 auto
   max-width: 1230px
 
-h2
+.h1
+  width: 100%
+  text-align: center
+  margin: 45px auto
+  text-transform: uppercase
+  font-size: 195px
+  font-family: $title-font
+  color: $green  
+
+h2, .h2
   width: 100%
   font-family: $title-font
   text-align: center
   font-size: 90px
   line-height: 115%
-  margin: 0 auto  
+  margin: 0 auto 50px
+  text-transform: uppercase
+
+h3, .h3
+  font-weight: bold
+  font-size: 34px
+  width: 100%  
+
+.text-center
+  text-align: center
+
 
 .container
   width: 100%
@@ -195,6 +259,43 @@ h2
   flex-wrap: wrap
   margin: 0 auto
 
+.row
+  display: flex
+  flex-wrap: wrap
+  align-items: stretch
+  margin: 0 -10px
+
+.w-100
+  width: 100%  
+
+.col-25
+  width: 25%
+  padding: 0 10px
+
+.col-50
+  width: 50%
+  padding: 0 10px
+
+.order-1
+  order: 1  
+
+.mb-20
+  margin-bottom: 20px  
+
 .m-auto
   margin: 0 auto
 
+.m-100
+  margin: 100px 0  
+
+.bg-black
+  background: #121715
+
+.bg-green
+  background: $green1  
+
+.box-text
+  p, ul
+    margin: 0 0 20px
+    &:last-child
+      margin: 0  
