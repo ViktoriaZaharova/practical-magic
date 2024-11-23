@@ -456,3 +456,213 @@
   flex-wrap: wrap
   li
     width: 33.33%  
+
+.result-course
+  h2
+    max-width: 1280px
+  .btn-sig
+    filter: drop-shadow(30px 0 65px rgba(#121715, .3))  
+
+.result-course-wrapper
+  max-width: 1530px
+  width: 100%
+  margin: 0 auto   
+
+.result-course-box
+  width: 100%
+  background: $white
+  color: $black
+  display: flex
+  align-items: center
+  border-radius: 30px
+  filter: drop-shadow(10px 10px 100px rgba(#121715, .07))
+  padding: 30px
+  &__icon
+    margin: 0 0 0 auto
+    @include d-flex
+    width: 190px
+    min-width: 190px
+    filter: drop-shadow(10px 10px 100px rgba(#121715, .1))
+  &__text
+    padding: 0 30px 0 0  
+
+.result-course-total
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  h4
+    font-size: 34px
+    font-weight: 500
+    margin: 0 0 35px  
+
+.training-format
+  margin: 80px 0
+  .h2
+    max-width: 600px
+  .row
+    align-items: flex-end
+
+.training-format-box
+  width: 100%
+  position: relative
+  z-index: 1
+  padding: 80px 32px 283px
+  border-radius: 30px
+  color: $white
+  text-align: center
+  &__bg
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: -1
+    @include d-flex
+    border-radius: 30px
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &::before
+    content: ''
+    position: absolute
+    left: 50%
+    top: -25px
+    transform: translate(-50%,0)
+    width: 50px
+    height: 50px
+    background: url('../img/format-icon1.svg') no-repeat center
+    background-size: 100%
+  h3
+    font-weight: normal
+    margin: 0 auto 20px
+    font-size: 55px
+    font-family: $title-font
+    text-transform: uppercase
+  .box-text
+    margin: 0 auto
+    font-weight: 300  
+
+.training-format-box2
+  padding: 80px 40px 274px
+  color: $brown
+  .box-text
+    max-width: 408px  
+
+.prices
+  h2
+    max-width: 885px
+    margin: 0 auto 20px
+
+  .subtitle
+    text-align: center
+    margin: 0 auto 30px    
+
+.prices-wrapper
+  width: 100%
+  max-width: 1530px
+  margin: 0 auto
+
+.prices-box
+  width: 100%
+  display: flex
+  align-items: center
+  position: relative
+  z-index: 1
+  border-radius: 50px
+  overflow: hidden
+  margin: 0 0 20px
+  padding: 50px 50px 50px 200px
+  color: $white
+  font-size: 34px 
+  &:last-child
+    margin: 0
+  &__body
+    margin: 0 auto 0 0  
+  &__bg
+    width: 100%
+    height: 100%
+    object-fit: cover
+    position: absolute
+    z-index: -1
+    left: 0
+    top: 0  
+  .btn
+    min-width: 755px  
+  h3
+    line-height: 115%
+    text-transform: uppercase
+    font-family: $title-font
+    font-size: 90px
+    font-weight: normal
+    margin: 0 0 10px
+    &::before
+      content: ''
+      @include d-flex
+      background: url('../img/prices-icon1.svg') no-repeat center
+      background-size: 100%
+      width: 40px
+      min-width: 40px
+      height: 40px
+
+  .box-text
+    max-width: 496px
+    
+    line-height: 135%
+    opacity: 0.5 
+
+.prices-box1
+  color: $brown    
+
+.prices-box2
+  h3
+    text-transform: none
+    line-height: 75%  
+    &::before
+      background: url('../img/prices-icon2.svg') no-repeat center
+      background-size: 100%
+      display: inline-block
+      margin: 0 5px 0 0
+
+.price
+  text-align: center
+  margin: 0 auto 10px
+  font-size: 90px
+  line-height: 115%
+  font-family: $title-font    
+
+.prices-box3
+  padding: 50px
+  h3
+    width: 100%
+    text-align: center
+    &::before
+      display: none  
+  .prices-box
+    &__body
+      width: 100%
+
+.faq-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  position: relative
+  z-index: 1
+  border: 2px solid transparent
+  background: linear-gradient($green1, $green1 ) padding-box, linear-gradient(to bottom, rgba(#F7F7F7, .8), rgba(#F7F7F7, .2)) border-box
+  border-radius: 300px
+  padding: 0 0 0 35px
+  &::before
+    content: ''
+    @include d-flex
+    margin: 0 25px 0 0
+    width: 60px
+    height: 60px
+    min-width: 60px
+    background: url('../img/faq-icon.svg') no-repeat center
+    background-size: 100%
+  .btn
+    margin: 0 0 0 auto

@@ -166,13 +166,41 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 
 .btn-gradien-accent {
   color: #855C29;
-  filter: drop-shadow(30px 0 85px -55px rgba(255, 233, 200, 0.6));
   background: url("../img/btn-default.svg") no-repeat center;
   background-size: cover;
 }
 .btn-gradien-accent:hover, .btn-gradien-accent:focus {
   background: url("../img/btn-default-hover.svg") no-repeat center;
   background-size: cover;
+}
+
+.btn-green {
+  background: #133029;
+  border: 2px solid transparent;
+  background: linear-gradient(#133029, #133029) padding-box, linear-gradient(to bottom, rgba(247, 247, 247, 0.8), rgba(247, 247, 247, 0.2)) border-box;
+  color: #F7F7F7;
+}
+.btn-green::before {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/loader-white.svg") no-repeat center;
+  background-size: 100%;
+  margin: 0 20px 0 0;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+}
+.btn-green:hover {
+  color: #855C29;
+  background: url("../img/btn-green-hover.svg") no-repeat center;
+  background-size: cover;
+  border: none;
+}
+.btn-green:hover::before {
+  background: url("../img/loader-icon-hover.svg") no-repeat center;
+  background-size: 100%;
 }
 
 .svg-icon {
@@ -291,6 +319,12 @@ h3, .h3 {
   text-align: center;
 }
 
+.subtitle {
+  font-size: 34px;
+  font-weight: 500;
+  width: 100%;
+}
+
 .container {
   width: 100%;
   max-width: 1920px;
@@ -314,6 +348,11 @@ h3, .h3 {
 
 .col-25 {
   width: 25%;
+  padding: 0 10px;
+}
+
+.col-30 {
+  width: 33.33%;
   padding: 0 10px;
 }
 
@@ -351,4 +390,8 @@ h3, .h3 {
 }
 .box-text p:last-child, .box-text ul:last-child {
   margin: 0;
+}
+
+.d-tablet {
+  display: none;
 }
