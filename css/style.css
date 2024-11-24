@@ -48,6 +48,10 @@ body {
   color: #F7F7F7;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -162,6 +166,10 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   justify-content: center;
   margin: 0 20px 0 0;
   fill: #855C29;
+}
+
+.btn-icon {
+  margin: 0 20px 0 0;
 }
 
 .btn-gradien-accent {

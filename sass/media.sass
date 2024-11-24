@@ -1,16 +1,289 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1900px)
+  .h1
+    font-size: 150px
+
+@media only screen and (max-width: 1400px)
+  .container
+    padding: 0 20px
+
+  body
+    font-size: 20px
+
+  footer
+    margin: 60px 0
+
+  .h1, h1
+    font-size: 80px
+
+  h2, .h2
+    font-size: 60px
+    line-height: normal
+
+  .btn-sign
+    max-width: 700px
+
+  .btn
+    font-size: 24px
+    height: 80px
+    padding: 10px
+
+  .btn-icon
+    max-width: 25px
+    margin: 0 15px 0 0
+
+  .date-course
+    max-width: 370px
+    &__text
+      p
+        font-size: 30px
+
+  .new-programm h2
+    font-size: 90px
+
 @media only screen and (max-width: 1200px)
+  .new-programm-wrapper
+    flex-direction: column
+    align-items: flex-start
+
+    &__img
+      order: 1
+      width: 100%
+    &__body
+      width: 100%
 
 @media only screen and (max-width: 992px)
+  body
+    font-size: 16px
+
+  .logo
+    max-width: 250px
+
+  .list-social
+    li
+      margin: 0 5px 0 0
+      &:last-child
+        margin: 0
+      a
+        max-width: 55px
+        width: 100%
+
+  .box-text p, .box-text ul
+    margin: 0 0 12px
+    &:last-child
+      margin: 0
+
+  .copyright, .meta-text
+    margin: 20px 0 0
+
+  footer .logo, .list-social
+    margin: 0 0 15px
+
+  .link-document
+    margin: 0 0 12px auto
+
+  .name-course
+    font-size: 26px
+
+  .h1, h1
+    font-size: 60px
+
+  h2, .h2
+    margin: 0 auto 25px
+
+  .new-programm
+    h2
+      font-size: 70px
+
+  .text
+    font-size: 28px
+
+  .programm-view
+    padding: 30px
+    margin: 15px 0 0
+    border-radius: 20px
+    &__icon
+      max-width: 80px
 
 @media only screen and (max-width: 768px)
+  .footer-box
+    width: 100%
+    text-align: center
+
+  footer
+    text-align: center
+    .box-text
+      margin: 0 0 12px
+      text-align: center
+      &:last-child
+        margin: 0
+    .logo
+      margin: 0 auto 15px
+    .d-pc
+      display: none
+    .d-tablet
+      display: block
+
+  .list-social
+    justify-content: center
+
+  .link-document
+    margin: 0 0 12px
+    text-align: center
+    width: 100%
+    &:last-child
+      margin: 0
+
+  .copyright
+    margin: 15px auto
+
+  .copyright, .meta-text
+    text-align: center
+
+  header
+    padding: 20px 0
+
+  .btn-sign
+    max-width: 500px
+
+  .h1, h1
+    font-size: 55px
+
+  h2, .h2
+    font-size: 50px
+
+  .name-course
+    margin: 15px auto
+    font-size: 18px
+    flex-direction: column
+    img
+      margin: 0 auto 5px
+
+  .slogan
+    margin: 20px auto
+
+  .text
+    font-size: 24px  
 
 @media only screen and (max-width: 576px)
+  .container
+    padding: 0 10px
+
+  body
+    font-size: 14px
+
+  .btn
+    font-size: 16px
+    height: 65px
+
+  .copyright
+    font-size: 11px
+
+  footer
+    .logo
+      max-width: 172px
+
+  .header-link
+    width: 35px
+    height: 35px
+    min-width: 35px
+    padding: 10px
+
+  .logo
+    max-width: 172px
+
+  header
+    .logo
+      margin: 0 auto 0 0
+      order: -1
+
+  .link-mail
+    margin: 0 5px 0 0
+
+  .home
+    padding: 220px 0 0
+    background: url('../img/home-bg-mobile.jpg') no-repeat center top
+    background-size: cover
+    margin: 0 0 -20px
+
+  .h1, h1
+    font-size: 45px
+    line-height: normal 
+
+  .h1
+    font-size: 42px
+    margin: 25px auto 15px  
+
+  h2, .h2
+    font-size: 42px
+    line-height: normal  
+
+  .btn-sign
+    max-width: 300px
+
+  .btn-mouse
+    margin: 30px auto 0
+    max-width: 40px
+
+  .date-course
+    border-radius: 10px
+    padding: 16px
+    font-size: 18px
+    max-width: 245px
+    &__icon
+      width: 40px
+      height: 40px
+      min-width: 40px
+      margin: 0 6px 0 0
+      padding: 13px
+    &__text
+      p
+        font-size: 26px
+      span
+        margin: 0
+
+  .name-course
+    font-size: 14px
+    max-width: 200px
+
+  .slogan
+    max-width: 300px
+
+  .wrapper-content
+    background: url('../img/new-programm-bg-mobile.svg') no-repeat center top
+    background-size: cover
+    padding: 60px 0
+
+  .new-programm
+    h2
+      font-size: 42px
+      margin: 0 auto 25px
+    .h2
+      font-size: 26px
+      margin: 0 0 10px
+    .h1
+      max-width: 255px  
+
+  .text
+    font-size: 16px
+
+  .new-programm-wrapper
+    border-radius: 20px
+    
+    &__body   
+      padding: 15px
+      .box-text
+        h4
+          font-size: 16px
+          margin: 0 0 8px
+          &::before
+            width: 15px
+            margin: 0 5px 0 0
 
 @media only screen and (max-width: 480px)
 
 @media only screen and (max-width: 420px)
 
-@media only screen and (max-width: 370px)	
+@media only screen and (max-width: 370px)
