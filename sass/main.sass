@@ -166,6 +166,10 @@
     right: 0
     top: 0
     width: fit-content
+    height: 100%
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
 
 .course-for-you-box-max
   .course-for-you-box
@@ -178,6 +182,7 @@
     width: 100%
     @include d-flex
     img
+      width: 100%
       filter: drop-shadow(10px 0 70px rgba(#141A1B, .2))
 
   &__text
@@ -282,7 +287,7 @@
 .author-course-text
   .box-text
     font-size: 36px
-    font-weight: light
+    font-weight: 300
 
 .age-practic
   margin: 25px 0 0
@@ -317,6 +322,7 @@
   &__content
     max-width: 830px
     font-size: 36px
+    font-weight: 300
     ul
       max-width: 775px
       li
@@ -553,6 +559,9 @@
   color: $brown
   .box-text
     max-width: 408px  
+  &::before
+    background: url('../img/format-icon2.svg') no-repeat center
+    background-size: 100%  
 
 .prices
   h2

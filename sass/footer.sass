@@ -58,9 +58,25 @@ footer
 
 .modal__close
   position: absolute
-  right: 10px
-  top: 10px
-  color: $green
+  right: 20px
+  top: 20px
+  cursor: pointer
+  width: 30px
+  height: 30px
+  &::before, &:after
+    content: ''
+    @include d-flex
+    position: absolute
+    left: 12px
+    top: 0
+    width: 2px
+    height: 100%
+    background: $green
+    border-radius: 5px
+  &::before
+    transform: rotate(45deg)
+  &::after
+    transform: rotate(135deg)  
   
 .modal__wrapper
   background: $white

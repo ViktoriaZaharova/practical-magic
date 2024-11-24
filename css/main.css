@@ -192,6 +192,10 @@
   top: 0;
   width: -moz-fit-content;
   width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .course-for-you-box-max .course-for-you-box__text {
@@ -208,6 +212,7 @@
   justify-content: center;
 }
 .will-learn-box__img img {
+  width: 100%;
   filter: drop-shadow(10px 0 70px rgba(20, 26, 27, 0.2));
 }
 .will-learn-box__text {
@@ -332,7 +337,7 @@
 
 .author-course-text .box-text {
   font-size: 36px;
-  font-weight: light;
+  font-weight: 300;
 }
 
 .age-practic {
@@ -372,6 +377,7 @@
 .course-able__content {
   max-width: 830px;
   font-size: 36px;
+  font-weight: 300;
 }
 .course-able__content ul {
   max-width: 775px;
@@ -659,6 +665,10 @@
 }
 .training-format-box2 .box-text {
   max-width: 408px;
+}
+.training-format-box2::before {
+  background: url("../img/format-icon2.svg") no-repeat center;
+  background-size: 100%;
 }
 
 .prices h2 {

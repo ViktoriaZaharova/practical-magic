@@ -65,9 +65,30 @@ footer .logo {
 
 .modal__close {
   position: absolute;
-  right: 10px;
-  top: 10px;
-  color: #09261F;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.modal__close::before, .modal__close:after {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 12px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #09261F;
+  border-radius: 5px;
+}
+.modal__close::before {
+  transform: rotate(45deg);
+}
+.modal__close::after {
+  transform: rotate(135deg);
 }
 
 .modal__wrapper {
