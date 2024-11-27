@@ -225,6 +225,8 @@
 .course-section {
   margin: 550px 0 100px;
   color: #F7F7F7;
+  position: relative;
+  z-index: 1;
 }
 .course-section__wrapper {
   width: 100%;
@@ -234,6 +236,8 @@
 }
 
 .course-for {
+  position: relative;
+  z-index: 1;
   margin: -470px 0 100px;
 }
 .course-for h2 {
@@ -450,11 +454,12 @@
   transition: 0.3s ease;
 }
 .panel_heading .block_hover {
-  display: none;
-  padding: 45px 0 0;
   width: 100%;
+}
+.panel_heading .block_hover .w-100 {
+  padding-top: 45px;
+  margin-top: 45px;
   border-top: 2px solid rgba(247, 247, 247, 0.5);
-  margin: 45px 0 0;
 }
 .panel_heading.in .block_title:after {
   background: url("../img/arrow-collapse-click.svg") no-repeat center;

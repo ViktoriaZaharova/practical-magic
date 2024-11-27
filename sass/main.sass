@@ -193,6 +193,8 @@
 .course-section
   margin: 550px 0 100px
   color: $white
+  position: relative
+  z-index: 1
   &__wrapper
     width: 100%
     border-radius: 50px
@@ -201,6 +203,8 @@
 
 // course-for
 .course-for
+  position: relative
+  z-index: 1
   margin: -470px 0 100px
   h2
     margin: 0 auto 80px
@@ -379,11 +383,15 @@
       filter: drop-shadow(7px 0 30px rgba(#FFE9C8, .15))
       transition: .3s ease
   .block_hover
-    display: none
-    padding: 45px 0 0
+    // display: none
+    // padding: 45px 0 0
     width: 100%
-    border-top: 2px solid rgba($white, .5)
-    margin: 45px 0 0
+    
+    // margin: 45px 0 0
+    .w-100
+      padding-top: 45px
+      margin-top: 45px
+      border-top: 2px solid rgba($white, .5)
   &.in
     .block_title
       &:after

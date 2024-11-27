@@ -788,7 +788,7 @@
     min-width: 20px;
     margin: 0 8px 0 0;
   }
-  .panel_heading .block_hover {
+  .panel_heading .block_hover .w-100 {
     margin: 15px 0 0;
     padding: 15px 0 0;
   }
