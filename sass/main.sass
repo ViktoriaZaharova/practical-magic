@@ -191,21 +191,32 @@
     margin: 0 0 10px
 
 .course-section
-  margin: 550px 0 100px
+  margin: 80px 0 100px
   color: $white
   position: relative
   z-index: 1
   &__wrapper
     width: 100%
     border-radius: 50px
-    background: $green
     padding: 0 155px 100px
+    position: relative
+    z-index: 1
+    &::before
+      content: ''
+      position: absolute
+      z-index: -1
+      width: 100%
+      height: calc(100% - 470px)
+      left: 0
+      top: 470px
+      background: $green
+      border-radius: 50px
+
+
 
 // course-for
 .course-for
-  position: relative
-  z-index: 1
-  margin: -470px 0 100px
+  margin: 0 0 100px
   h2
     margin: 0 auto 80px
 

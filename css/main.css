@@ -223,7 +223,7 @@
 }
 
 .course-section {
-  margin: 550px 0 100px;
+  margin: 80px 0 100px;
   color: #F7F7F7;
   position: relative;
   z-index: 1;
@@ -231,14 +231,24 @@
 .course-section__wrapper {
   width: 100%;
   border-radius: 50px;
-  background: #09261F;
   padding: 0 155px 100px;
+  position: relative;
+  z-index: 1;
+}
+.course-section__wrapper::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: calc(100% - 470px);
+  left: 0;
+  top: 470px;
+  background: #09261F;
+  border-radius: 50px;
 }
 
 .course-for {
-  position: relative;
-  z-index: 1;
-  margin: -470px 0 100px;
+  margin: 0 0 100px;
 }
 .course-for h2 {
   margin: 0 auto 80px;

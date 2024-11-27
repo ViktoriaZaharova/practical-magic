@@ -113,7 +113,7 @@
     font-size: 60px
 
   .subtitle
-    font-size: 28px  
+    font-size: 28px
 
 @media only screen and (max-width: 1200px)
   .new-programm-wrapper
@@ -160,8 +160,6 @@
 
   .prices .subtitle
     margin: 0 auto 15px
-
-  
 
 @media only screen and (max-width: 992px)
   body
@@ -226,7 +224,7 @@
     order: inherit
 
   .course-for-you-box
-    padding-right: 100px
+    padding-right: 165px
 
   .course-for-you-box-max
     .course-for-you-box__icon
@@ -318,7 +316,7 @@
   .prices-box
     padding: 15px 50px 0
     flex-direction: column
-    align-items: flex-start  
+    align-items: flex-start
     font-size: 16px
     overflow: visible
     margin: 0 auto 35px
@@ -329,24 +327,24 @@
     &:last-child
       margin: 0 auto
     &__bg
-      display: none  
+      display: none
     &__body
       max-width: none
       width: 100%
     h3
-      font-size: 42px 
+      font-size: 42px
       &::before
         width: 25px
         height: 25px
         min-width: 25px
-        margin: 0 0 15px     
+        margin: 0 0 15px
     &__price
       width: 100%
       margin: 30px 0 0
     .btn
       min-width: auto
       width: calc(100% + 100px)
-      margin: 0 -50px -25px  
+      margin: 0 -50px -25px
 
   .faq-wrapper
     border: none
@@ -354,7 +352,7 @@
     align-items: center
     border-radius: 0
     font-size: 16px
-    padding: 0 
+    padding: 0
     text-align: center
     background: transparent
     &::before
@@ -367,12 +365,11 @@
 
   .prices-box2
     background: url('../img/prices-bg2-mobile.png') no-repeat center top
-    background-size: cover  
+    background-size: cover
     h3
       &::before
         display: block
-        margin: 0 0 15px  
-      
+        margin: 0 0 15px
 
   .prices-box3
     padding-top: 50px
@@ -446,12 +443,12 @@
     font-size: 24px
 
   .course-for-you
-    margin: 60px 0 80px
+    margin: 40px 0 80px
 
   .course-for-you-box
     font-size: 18px
     border-radius: 20px
-    padding: 15px
+    padding: 15px 150px 15px 15px
 
   .will-learn-box
     &__text
@@ -461,7 +458,7 @@
     font-size: 20px
 
   .course-for
-    margin: -350px auto 60px
+    margin: 0 auto 60px
     h2
       margin: 0 auto 20px
       display: none
@@ -509,10 +506,14 @@
     transform: none
 
   .course-section
-    margin: 440px 0 60px
+    margin: 40px 0 60px
 
   .course-section__wrapper
     border-radius: 20px
+    &::before
+      height: calc(100% - 350px)
+      top: 350px
+      border-radius: 20px
 
   .author-course-text .box-text, .age-practic
     font-size: 20px
@@ -669,8 +670,12 @@
       margin: 0 0 12px
 
   .course-for-you-box
+    font-size: 16px
+    padding: 15px 100px 15px 15px
     &__icon
       max-width: 100px
+    &__decor
+      max-width: 28px
 
   .course-for-you-box-max .course-for-you-box__icon
     right: 0
@@ -793,3 +798,7 @@
     right: 14px
     &::before, &:after
       left: 10px
+
+@media only screen and (max-width: 370px)
+  .course-for-you-box
+    padding: 15px 80px 15px 15px
