@@ -47,7 +47,6 @@
   padding: 30px;
   border-radius: 30px;
   margin: 0 auto;
-  filter: drop-shadow(10px 0 70px rgba(5, 23, 18, 0.5));
   border: 2px solid transparent;
   background: linear-gradient(#133029, #133029) padding-box, linear-gradient(to bottom, rgba(247, 247, 247, 0.8), rgba(247, 247, 247, 0.2)) border-box;
 }
@@ -86,6 +85,8 @@
   background: url("../img/new-programm-bg.svg") no-repeat center top;
   background-size: cover;
   color: #121715;
+  position: relative;
+  z-index: 2;
 }
 
 .new-programm h2 {
@@ -152,7 +153,6 @@
   background-size: cover;
   padding: 30px 40px 35px 40px;
   color: #855C29;
-  filter: drop-shadow(10px 0 70px rgba(5, 23, 18, 0.5));
 }
 .programm-view__icon {
   margin: 0 0 20px;
@@ -213,7 +213,6 @@
 }
 .will-learn-box__img img {
   width: 100%;
-  filter: drop-shadow(10px 0 70px rgba(20, 26, 27, 0.2));
 }
 .will-learn-box__text {
   margin: 30px 0 0;
@@ -256,7 +255,6 @@
 
 .course-for-wrapper {
   width: 100%;
-  filter: drop-shadow(10px 10px 100px rgba(18, 23, 21, 0.1));
   background: url("../img/course-for-bg.png") no-repeat center;
   background-size: cover;
   max-width: 1530px;
@@ -346,7 +344,6 @@
   background: url("../img/appointment-course-bg.png") no-repeat center;
   background-size: cover;
   border-radius: 30px;
-  filter: drop-shadow(10px 0 70px rgba(5, 23, 18, 0.5));
 }
 
 .author-course-text .box-text {
@@ -460,7 +457,6 @@
   margin: 0 0 0 45px;
   background: url("../img/arrow-collapse.svg") no-repeat center;
   background-size: 100%;
-  filter: drop-shadow(7px 0 30px rgba(255, 233, 200, 0.15));
   transition: 0.3s ease;
 }
 .panel_heading .block_hover {
@@ -482,7 +478,6 @@
   white-space: nowrap;
   font-size: 34px;
   padding: 18px 15px;
-  filter: drop-shadow(10px 0 70px rgba(5, 23, 18, 0.5));
   border: 1px solid transparent;
   background: linear-gradient(#133029, #133029) padding-box, linear-gradient(to bottom, rgba(247, 247, 247, 0.8), rgba(247, 247, 247, 0.2)) border-box;
   border-radius: 7px;
@@ -507,7 +502,6 @@
   border-radius: 30px;
   padding: 30px;
   margin: 0 0 20px;
-  filter: drop-shadow(10px 0 70px rgba(5, 23, 18, 0.5));
 }
 .learn-box:last-child {
   margin: 0;
@@ -524,7 +518,6 @@
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 700px;
-  filter: drop-shadow(10px 0 70px rgba(5, 23, 18, 0.5));
 }
 .learn-box__number::before {
   content: "";
@@ -567,9 +560,6 @@
 .result-course h2 {
   max-width: 1280px;
 }
-.result-course .btn-sig {
-  filter: drop-shadow(30px 0 65px rgba(18, 23, 21, 0.3));
-}
 
 .result-course-wrapper {
   max-width: 1530px;
@@ -584,7 +574,6 @@
   display: flex;
   align-items: center;
   border-radius: 30px;
-  filter: drop-shadow(10px 10px 100px rgba(18, 23, 21, 0.07));
   padding: 30px;
 }
 .result-course-box__icon {
@@ -594,7 +583,6 @@
   justify-content: center;
   width: 190px;
   min-width: 190px;
-  filter: drop-shadow(10px 10px 100px rgba(18, 23, 21, 0.1));
 }
 .result-course-box__text {
   padding: 0 30px 0 0;
